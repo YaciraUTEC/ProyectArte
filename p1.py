@@ -38,7 +38,7 @@ def input(key):
 platform = Entity(model="cube", collider="box", texture="piso", scale=(3000, 1, 3000), position=(0, 0, 0))
 
 
-##################################################################
+############################################################
 # Pared izquierda cuarto principal
 
 wall_1_1 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "wall4.jpg", collider='box')
@@ -62,7 +62,8 @@ wall_1_111.z = -500
 wall_1_111.y = 370
 
 
-#cuarto1 Emojis
+#--------------------cuarto1 
+# #Emojis
 
 # Añadiendo emojis y elementos interactivos
 emoji_2d = Entity(
@@ -93,6 +94,7 @@ wall_2 = Entity(
 )
 
 # pared frontal
+# cubo
 wall_1_1_2 = Entity(
     model='cube',
     scale=(500, 1000, 10),
@@ -133,14 +135,14 @@ wall_1_111.y = 370
 pisos1 = Entity(model="cube", collider="box", texture="pisos1.jpg", scale=(500, 1, 500), position=(250, 1, -750))
 
 
-#cuarto 2 izquierdo Sala de Redes Sociales
+#-------------------------cuarto 2 izquierdo Sala de Redes Sociales
 # pared izquierdo
 wall_1_1_3 = Entity(model='cube', scale=(10, 1000, 500), color=color.white, texture = "sala_inicio.jpg", collider='box')
 wall_1_1_3.x = -15 
 wall_1_1_3.z = -750
 wall_1_1_3.y = 0
 
-# pared frontal
+# pared trasera
 wall_1_1_2 = Entity(model='cube', scale=(500, 1000, 10), color=color.white, texture = "sala_inicio.jpg", collider='box')
 wall_1_1_2.x = -250
 wall_1_1_2.z = -1000 # mover a la derecha 
@@ -157,11 +159,114 @@ wall_1_11 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, textur
 wall_1_11.x = -175
 wall_1_11.z = -505
 wall_1_11.y = 370
-#pared interior2
+#pared interior1_!
 wall_1_1_1= Entity(model='cube', scale=(150, 250, 5), color=color.white, texture = "sala_inicio.jpg", collider='box')
 wall_1_1_1.x = -425
 wall_1_1_1.z = -505 
 wall_1_1_1.y = 370
+
+#piso
+pisos1 = Entity(model="cube", collider="box", texture="pisos1.jpg", scale=(500, 1, 500), position=(-250, 1, -750))
+
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+#se tiene que cambiar habitacion 3 y 4
+
+# Habitación 3
+
+# lado izquierdo
+wall_1_1_3 = Entity(model='cube', scale=(10, 1000, 500), color=color.white, texture = "o.png", collider='box')
+wall_1_1_3.x = 1.5
+wall_1_1_3.z = 750
+wall_1_1_3.y = 0
+
+# lado trasero
+wall_1_1_2 = Entity(model='cube', scale=(500, 880, 100), color=color.white, texture = "i.png", collider='box')
+wall_1_1_2.x = 250
+wall_1_1_2.z = 1000
+wall_1_1_2.y = 400
+
+
+# lado derecho
+
+wall_1_1_3 = Entity(model='cube', scale=(10, 1000, 500), color=color.white, texture = "o.png", collider='box')
+wall_1_1_3.x = 500 
+wall_1_1_3.z = 750
+wall_1_1_3.y = 0
+
+
+
+#pared interior1
+wall_1_11 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "e.png", collider='box')
+wall_1_11.x = 325
+wall_1_11.z = 510
+wall_1_11.y = 20
+
+#pared inteior1_1
+wall_1_111 = Entity(model='cube', scale=(155, 255, 5), color=color.white, texture = "sala_reflexion.jpg", collider='box')
+wall_1_111.x = 75
+wall_1_111.z = 510
+wall_1_111.y = 370
+#piso
+pisos1 = Entity(model="cube", collider="box", texture="pisos1.jpg", scale=(500, 1, 500), position=(-250, 1, -750))
+
+
+#--------------------------------------------------------
+# Habitacion 4
+
+# lado trasero
+
+wall_1_114= Entity(model="cube",scale=(1,250,150), texture="espejo.png",collider="box",position=(-400,300,300)); wall_1_114.rotation_y = 90
+wall_1_114.x = -400
+wall_1_114.z = 990
+wall_1_114.y = 350
+
+
+wall_1_114= Entity(model="cube",scale=(1,250,120), texture="espejo_1.jpg",collider="box",position=(-400,300,300)); wall_1_114.rotation_y = 90
+wall_1_114.x = -240
+wall_1_114.z = 990
+wall_1_114.y = 350
+
+
+wall_1_114= Entity(model="cube",scale=(1,250,120), texture="espejo_3.jpg",collider="box",position=(-400,300,300)); wall_1_114.rotation_y = 90
+wall_1_114.x = -100
+wall_1_114.z = 990
+wall_1_114.y = 350
+
+wall_1_114= Entity(model="cube",scale=(1,200,120), texture="espejo_4.png" ,collider="box",position=(-400,300,300)); wall_1_114.rotation_y = 90
+wall_1_114.x = -400
+wall_1_114.z = 990
+wall_1_114.y = 120  
+
+wall_1_114= Entity(model="cube",scale=(1,200,120), texture="espejo_5.jpg",collider="box",position=(-400,300,300)); wall_1_114.rotation_y = 90
+wall_1_114.x = -240
+wall_1_114.z = 990
+wall_1_114.y = 120
+
+wall_1_114= Entity(model="cube",scale=(1,200,120), texture="espejo_6.jpg",collider="box",position=(-400,300,300)); wall_1_114.rotation_y = 90
+wall_1_114.x = -100
+wall_1_114.z = 990
+wall_1_114.y = 120
+
+
+
+#   Espejo esquina 
+
+wall_1_114= Entity(model="cube",scale=(0,300,150), texture="e1.png",collider="box",position=(-400,300,300)); wall_1_114.rotation_y = 25
+wall_1_114.x = -150
+wall_1_114.z = 550
+wall_1_114.y = 120
+
+wall_1_114= Entity(model="cube",scale=(0,300,150), texture="e1.png",collider="box",position=(-400,300,300)); wall_1_114.rotation_y = 170
+wall_1_114.x = -120
+wall_1_114.z = 600
+wall_1_114.y = 120
+
+''
+
+
 #piso
 pisos1 = Entity(model="cube", collider="box", texture="pisos1.jpg", scale=(500, 1, 500), position=(-250, 1, -750))
 
@@ -169,7 +274,7 @@ pisos1 = Entity(model="cube", collider="box", texture="pisos1.jpg", scale=(500, 
 
 
 
-#se tiene que cambiar habitacion 3 y 4
+
 ##################################################################
 # Pared derecha cuarto principal
 
@@ -193,6 +298,8 @@ wall_1_111.x = 75
 wall_1_111.z = 500
 wall_1_111.y = 370
 
+
+#--------------------------------
 # Cuarto 1 y 2 izquierdo
 
 # pared 
